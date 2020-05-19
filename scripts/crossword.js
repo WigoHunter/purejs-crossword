@@ -63,6 +63,7 @@ const printLetter = (x, y, l) =>
       border: 0.05px solid #888;
       padding: 0;
       box-sizing: border-box;
+      z-index: 10;
       text-transform: uppercase;">
       ${l}
     </p>`;
@@ -83,5 +84,6 @@ const printInputBox = (x, y) =>
       text-align: center;
       text-transform: uppercase;
       border: 0.05px solid #888;
+      z-index: 1;
       box-sizing: border-box;'
     />`;
