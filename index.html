@@ -6,12 +6,16 @@
     <div id="target"></div>
     <script>
       window.addEventListener("load", () => {
-        crossword([
-          { x: 0, y: 0, word: "K_V_N", direction: "down" },
-          { x: 1, y: 1, word: "AL_CE", direction: "right" },
-          { x: 10, y: 10, word: "Hell_", direction: "left" },
-          { x: 10, y: 10, word: "H_G", direction: "up" }
-        ]);
+        crossword(
+          [
+            { index: "1", top: 0, left: 0, word: "K_V_N", direction: "down" },
+            { index: "2", top: 1, left: 1, word: "_L_CE", direction: "right" }
+          ],
+          [
+            { index: "1", top: 3, left: 0 },
+            { index: "2", top: 1, left: 1 }
+          ]
+        );
       });
     </script>
     <script src="/scripts/crossword.js"></script>
